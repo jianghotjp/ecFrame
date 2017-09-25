@@ -153,8 +153,8 @@ function imgFormat(url, format, isZip, notForTpl) {
  * 通用初始化代码
  */
 $(function () {
-  // // if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
-  if('ontouchstart' in window){
+  if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)){
+  // if('ontouchstart' in window){
     // 移动端
     var modal = '<div class="am-modal am-modal-confirm" tabindex="-1" id="changeConfirm">\
                 <div class="am-modal-dialog">\
@@ -184,7 +184,9 @@ $(function () {
   $('body').on('click', '.goto_top', function() { $('html,body').stop(1).animate({ scrollTop: '0' }, 300); return false });
 
   $('body').on('click.window', 'a', function () {
-    return toNewPage($(this).attr('href'));
+    if($(this).attr('target')!='_blank'){
+      return toNewPage($(this).attr('href'));      
+    }
   });
 
   // 头部通用
