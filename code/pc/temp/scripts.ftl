@@ -11,5 +11,6 @@
 <![endif]-->
 <script src="${vars.theme.root}/resources/amaze-full/js/amazeui.custom.min.js"></script>
 <script src="${vars.theme.root}/resources/js/common.js"></script>
+<script src="${vars.theme.root}/resources/js/pageCommon.js"></script>
 <script src="${vars.theme.root}/resources/js/tplCommon.js" type="text/javascript" charset="utf-8"></script>
 <script src="${vars.theme.root}/resources/js/module/jquery.page.js" type="text/javascript" charset="utf-8"></script>

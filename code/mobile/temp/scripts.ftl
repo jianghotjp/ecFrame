@@ -14,4 +14,5 @@
 
 <script src="${vars.theme.root}/resources/js/location.js" ></script>
 <script src="${vars.theme.root}/resources/js/common.js" ></script>
+<script src="${vars.theme.root}/resources/js/pageCommon.js" ></script>
 <script src="${vars.theme.root}/resources/js/tplCommon.js" ></script>
