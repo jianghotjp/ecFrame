@@ -4,6 +4,7 @@
 <script src="${vars.theme.root}/resources/js/module/template-native.js" type="text/javascript" charset="utf-8"></script>
 <script src="${vars.theme.root}/resources/js/module/holder.min.js"></script>
 <script src="${vars.theme.root}/resources/js/module/base64.min.js"></script>
+<script src="${vars.theme.root}/resources/js/module/swfobject.js"></script>
 <!--[if lte IE 8 ]>
 <script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
 <script src="${vars.theme.root}/resources/js/module/amazeui.ie8polyfill.min.js"></script>

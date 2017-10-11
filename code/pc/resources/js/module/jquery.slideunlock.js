@@ -49,7 +49,7 @@
         //success
         me.success = success;
         //旧标签
-        me.oldLabelTip = me.elm.find('#label').text();
+        me.oldLabelTip = me.elm.find('#labelTip').text();
     }
 
     SliderUnlock.prototype.init = function () {
@@ -140,7 +140,6 @@
             //解锁默认操作
             $('#label').unbind().next('#labelTip').
             text(me.opts.successLabelTip).css({'color': '#fff'});
-
             me.success();
         }
         me.updateView();
@@ -174,6 +173,8 @@
   SliderUnlock.prototype.restart = function () {
     var me = this;
     me.init();
+    $('#labelTip').text(me.oldLabelTip);
+
   };
 
 
